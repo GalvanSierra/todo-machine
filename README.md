@@ -1,8 +1,60 @@
-# React + Vite
+# TODO Machine: App de gestión de tareas con React.js y Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [TODO Machine: App de gestión de tareas con React.js y Vite](#todo-machine-app-de-gestión-de-tareas-con-reactjs-y-vite)
+  - [Introducción](#introducción)
+  - [Funcionalidades](#funcionalidades)
+  - [Tecnologías utilizadas](#tecnologías-utilizadas)
+  - [Pasos para desplegar la aplicación](#pasos-para-desplegar-la-aplicación)
+  - [Recursos adicionales](#recursos-adicionales)
+  - [Contribuciones](#contribuciones)
+  - [Licencia](#licencia)
 
-Currently, two official plugins are available:
+## Introducción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+TODO Machine es una aplicación web sencilla para gestionar tareas pendientes, desarrollada con React.js y Vite. El proyecto sirve como herramienta para aprender los fundamentos de React.js para desarrollo frontend, siguiendo los pasos del Curso de React.js en Platzi (https://platzi.com/cursos/react/).
+
+## Funcionalidades
+
+- Crear, editar y eliminar tareas.
+- Marcar tareas como completadas o incompletas.
+- Filtrar tareas por estado (completadas o incompletas).
+
+## Tecnologías utilizadas
+
+React.js: Biblioteca de JavaScript para crear interfaces de usuario.
+Vite: Herramienta de desarrollo web que optimiza el proceso de construcción y ejecución de aplicaciones React.js.
+
+## Pasos para desplegar la aplicación
+
+**1. Clonar el repositorio:**
+
+```bash
+git clone https://github.com/Jairox789/To-Do-Machine
+```
+
+**2. Instalar dependencias:**
+
+```bash
+npm install
+```
+
+**3. Ejecutar el comando de desarrollo:**
+
+```bash
+npm run dev
+```
+
+## Recursos adicionales
+
+Curso de React.js en Platzi: https://platzi.com/cursos/react/
+Vite: https://vitejs.dev/
+Netlify: https://www.netlify.com/
+Vercel: https://vercel.com/
+
+## Contribuciones
+
+Se aceptan con gusto contribuciones a este proyecto. Si desea aportar, cree un issue o una pull request en el repositorio de GitHub.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT.
