@@ -7,7 +7,7 @@ import { TodoList } from "../components/TodoList";
 import { TodoSearch } from "../components/TodoSearch";
 import { TodosError } from "../components/TodosError";
 import { TodosLoading } from "../components/TodosLoading";
-import { TodoContext } from "./contexts/TodoContext";
+import { TodoContext } from "../context/TodoContext";
 import Modal from "../components/Modal";
 import { TodoForm } from "../components/TodoForm";
 

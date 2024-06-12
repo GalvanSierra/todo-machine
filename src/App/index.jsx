@@ -1,5 +1,5 @@
+import { TodoProvider } from "../context/TodoContext";
 import { AppIU } from "./AppIU";
-import { TodoProvider } from "./contexts/TodoContext";
 
 function App() {
   return (

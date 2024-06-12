@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { useLocaStorage } from "../../hooks/useLocaStorage";
+import { useLocaStorage } from "../hooks/useLocaStorage";
 
 const defaultTodos = [
   { text: "Comprar pan", completed: true },

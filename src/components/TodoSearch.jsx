@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { TodoContext } from "../App/contexts/TodoContext";
+import { TodoContext } from "../context/TodoContext";
 
 export function TodoSearch() {
   const { searchValue, setSearchValue } = useContext(TodoContext);
