@@ -6,7 +6,9 @@ export function TodoSearch() {
 
   return (
     <input
+      className="todo__search"
       type="text"
+      placeholder="buscar..."
       value={searchValue}
       onChange={(event) => {
         setSearchValue(event.target.value);

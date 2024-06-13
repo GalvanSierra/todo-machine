@@ -1,3 +1,3 @@
 export function TodoList({ children }) {
-  return <ul>{children}</ul>;
+  return <ul className="todo__list">{children}</ul>;
 }

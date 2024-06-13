@@ -1,3 +1,3 @@
 export function EmptyTodos() {
-  return <p>todo</p>;
+  return <p>Crea tu primer TODO</p>;
 }

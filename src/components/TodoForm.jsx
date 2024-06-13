@@ -17,17 +17,27 @@ export function TodoForm() {
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      <label htmlFor="">Escribe tu nueva tarea</label>
+    <form className="form" onSubmit={onSubmit}>
+      <label className="form__label" htmlFor="input">
+        Escribe tu nueva tarea
+      </label>
       <textarea
-        name=""
-        id=""
-        placeholder="hola"
+        className="form__input"
+        name="input"
+        id="input"
+        placeholder="nueva tarea"
         value={value}
         onChange={(e) => setValue(e.target.value)}
       ></textarea>
-      <button>Agregar tarea</button>
-      <button onClick={onCancel}>Cancelar</button>
+      <div className="form__buttons">
+        <button className="form__button form__button--add">Agregar</button>
+        <button
+          className="form__button form__button--cancel"
+          onClick={onCancel}
+        >
+          Cancelar
+        </button>
+      </div>
     </form>
   );
 }

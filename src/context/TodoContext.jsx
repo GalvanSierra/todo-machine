@@ -1,12 +1,7 @@
 import { createContext, useState } from "react";
 import { useLocaStorage } from "../hooks/useLocaStorage";
 
-const defaultTodos = [
-  { text: "Comprar pan", completed: true },
-  { text: "Tomar el Curso de Intro a React.js", completed: false },
-  { text: "Llorar", completed: false },
-  { text: "Cosas de la vida", completed: false },
-];
+const defaultTodos = [{ text: "Leer", completed: false }];
 
 export const TodoContext = createContext();
 
@@ -16,7 +11,7 @@ export function TodoProvider({ children }) {
     saveItem: saveTodos,
     error,
     loading,
-  } = useLocaStorage("TODOS", defaultTodos);
+  } = useLocaStorage("TODOS", []);
 
   const [searchValue, setSearchValue] = useState("");
 
