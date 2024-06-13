@@ -12,11 +12,13 @@
 
 TODO Machine es una aplicación web sencilla para gestionar tareas pendientes, desarrollada con React.js y Vite. El proyecto sirve como herramienta para aprender los fundamentos de React.js para desarrollo frontend, siguiendo los pasos del [Curso de React.js en Platzi](https://platzi.com/cursos/react/).
 
+[Demo del proyecto](https://galvansierra.github.io/todo-machine/)
+
 ## Funcionalidades
 
-- Crear, editar y eliminar tareas.
-- Marcar tareas como completadas o incompletas.
-- Filtrar tareas por estado (completadas o incompletas).
+- [x] Crear y eliminar tareas.
+- [x] Marcar tareas como completadas o incompletas.
+- [x] Mostrar el numero de tareas completadas
 
 ## Tecnologías utilizadas
 
