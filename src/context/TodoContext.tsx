@@ -1,44 +1,48 @@
-import { createContext, useState } from "react";
-import { useLocaStorage } from "../hooks/useLocaStorage";
+import { createContext, ReactNode, useState } from "react";
+import { UseLocalStorageResult, useLocaStorage } from "../hooks/useLocaStorage";
 
-const defaultTodos = [{ text: "Leer", completed: false }];
+type Props = {
+  children: ReactNode;
+};
 
-export const TodoContext = createContext();
+export const TodoContext = createContext<TodoContextValue>(
+  {} as TodoContextValue
+);
 
-export function TodoProvider({ children }) {
+export function TodoProvider({ children }: Props) {
   const {
     item: todos,
     saveItem: saveTodos,
     error,
     loading,
-  } = useLocaStorage("TODOS", []);
+  }: UseLocalStorageResult<Todo[]> = useLocaStorage("TODOS", [] as Todo[]);
 
   const [searchValue, setSearchValue] = useState("");
 
-  const completedTodos = todos.filter((todo) => todo.completed).length;
+  const completedTodos = todos.filter((todo: Todo) => todo.completed).length;
   const totalTodos = todos.length;
 
-  const searchedTodos = todos.filter((todo) =>
+  const searchedTodos = todos.filter((todo: Todo) =>
     todo.text.toLowerCase().includes(searchValue.toLowerCase())
   );
 
-  const completeTodo = (text) => {
+  const completeTodo = (text: string) => {
     const newTodos = [...todos];
-    const index = newTodos.findIndex((todo) => todo.text === text);
+    const index = newTodos.findIndex((todo: Todo) => todo.text === text);
 
     newTodos[index].completed = true;
     saveTodos(newTodos);
   };
 
-  const deleteTodo = (text) => {
+  const deleteTodo = (text: string) => {
     const newTodos = [...todos];
-    const index = newTodos.findIndex((todo) => todo.text === text);
+    const index = newTodos.findIndex((todo: Todo) => todo.text === text);
 
     if (index > -1) newTodos.splice(index, 1);
     saveTodos(newTodos);
   };
 
-  const addTodo = (text) => {
+  const addTodo = (text: string) => {
     const newTodos = [...todos];
     newTodos.push({ text, completed: false });
     saveTodos(newTodos);
