@@ -5,13 +5,12 @@
   - [Funcionalidades](#funcionalidades)
   - [Tecnologías utilizadas](#tecnologías-utilizadas)
   - [Pasos para desplegar la aplicación](#pasos-para-desplegar-la-aplicación)
-  - [Recursos adicionales](#recursos-adicionales)
   - [Contribuciones](#contribuciones)
   - [Licencia](#licencia)
 
 ## Introducción
 
-TODO Machine es una aplicación web sencilla para gestionar tareas pendientes, desarrollada con React.js y Vite. El proyecto sirve como herramienta para aprender los fundamentos de React.js para desarrollo frontend, siguiendo los pasos del Curso de React.js en Platzi (https://platzi.com/cursos/react/).
+TODO Machine es una aplicación web sencilla para gestionar tareas pendientes, desarrollada con React.js y Vite. El proyecto sirve como herramienta para aprender los fundamentos de React.js para desarrollo frontend, siguiendo los pasos del [Curso de React.js en Platzi](https://platzi.com/cursos/react/).
 
 ## Funcionalidades
 
@@ -43,13 +42,6 @@ npm install
 ```bash
 npm run dev
 ```
-
-## Recursos adicionales
-
-Curso de React.js en Platzi: https://platzi.com/cursos/react/
-Vite: https://vitejs.dev/
-Netlify: https://www.netlify.com/
-Vercel: https://vercel.com/
 
 ## Contribuciones
 
