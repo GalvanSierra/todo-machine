@@ -1,6 +1,16 @@
 import { useEffect, useState } from "react";
 
-export function useLocaStorage(itemName, initialValue) {
+export interface UseLocalStorageResult<T> {
+  item: T;
+  saveItem: (newItem: T) => void;
+  error: boolean;
+  loading: boolean;
+}
+
+export function useLocaStorage<T>(
+  itemName: string,
+  initialValue: T
+): UseLocalStorageResult<T> {
   const [item, setItem] = useState(initialValue);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -23,10 +33,9 @@ export function useLocaStorage(itemName, initialValue) {
       }
       setLoading(false);
     }, 2000);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const saveItem = (newItem) => {
+  const saveItem = (newItem: T) => {
     localStorage.setItem(itemName, JSON.stringify(newItem));
     setItem(newItem);
   };
