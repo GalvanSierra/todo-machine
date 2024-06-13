@@ -1,6 +1,8 @@
-# TODO Machine: App de gestión de tareas con React.js y Vite
+# TODO Machine: App de gestión de tareas con React.js, Vite y TypeScript
 
-- [TODO Machine: App de gestión de tareas con React.js y Vite](#todo-machine-app-de-gestión-de-tareas-con-reactjs-y-vite)
+> NOTA: esta es una rama para poner en practica el [Curso de React.js con TypeScript](https://platzi.com/cursos/react-typescript/)
+
+- [TODO Machine: App de gestión de tareas con React.js, Vite y TypeScript](#todo-machine-app-de-gestión-de-tareas-con-reactjs-vite-y-typescript)
   - [Introducción](#introducción)
   - [Funcionalidades](#funcionalidades)
   - [Tecnologías utilizadas](#tecnologías-utilizadas)
@@ -22,8 +24,9 @@ TODO Machine es una aplicación web sencilla para gestionar tareas pendientes, d
 
 ## Tecnologías utilizadas
 
-React.js: Biblioteca de JavaScript para crear interfaces de usuario.
-Vite: Herramienta de desarrollo web que optimiza el proceso de construcción y ejecución de aplicaciones React.js.
+- React.js: Biblioteca de JavaScript para crear interfaces de usuario.
+- Vite: Herramienta de desarrollo web que optimiza el proceso de construcción y ejecución de aplicaciones React.js.
+- TypeScript: Lenguaje de programación que es un superconjunto de JavaScript y agrega tipos estáticos.
 
 ## Pasos para desplegar la aplicación
 
