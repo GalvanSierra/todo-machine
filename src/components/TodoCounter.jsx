@@ -7,7 +7,7 @@ export function TodoCounter() {
   return (
     <h2 className="todo__title">
       {completedTodos === totalTodos && totalTodos != 0
-        ? "Haz completado todo"
+        ? "Haz completado todas las tareas"
         : `Has completado ${completedTodos} de ${totalTodos}`}
     </h2>
   );
