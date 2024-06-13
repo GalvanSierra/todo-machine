@@ -1,4 +1,16 @@
-export function TodoItem({ text, completed, onComplete, onDelete }) {
+import { MouseEventHandler } from "react";
+
+interface TodoItemProps extends Todo {
+  onComplete: MouseEventHandler<HTMLSpanElement>;
+  onDelete: MouseEventHandler<HTMLSpanElement>;
+}
+
+export function TodoItem({
+  text,
+  completed,
+  onComplete,
+  onDelete,
+}: TodoItemProps) {
   return (
     <li className={`todo__item ${!completed ? "" : "todo__item--completed"}`}>
       <span className="todo__icon-complete" onClick={onComplete}>

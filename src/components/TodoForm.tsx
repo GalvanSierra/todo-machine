@@ -4,9 +4,9 @@ import { TodoContext } from "../context/TodoContext";
 export function TodoForm() {
   const { addTodo, setOpenModal } = useContext(TodoContext);
 
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState<string>("");
 
-  const onSubmit = (e) => {
+  const onSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     addTodo(value);
     setOpenModal(false);

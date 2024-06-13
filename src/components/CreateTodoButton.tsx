@@ -1,4 +1,8 @@
-export function CreateTodoButton({ setOpenModal }) {
+interface Props {
+  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export function CreateTodoButton({ setOpenModal }: Props) {
   return (
     <>
       <button
